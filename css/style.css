@@ -53,6 +53,11 @@ aside a:hover {
     margin-bottom: 20px;
 }
 
+.logo img.mini {
+    width: 40px;
+    display: none;
+}
+
 .nav-top li,
 .nav-bottom li {
     margin-bottom: 10px;
@@ -71,16 +76,17 @@ aside a:hover {
     border-left: 2px solid #28D25F;
 }
 
-
-
 .nav-bottom li:first-child {
     border-bottom: 1px solid #8A8776;
 }
+
 
 .playlists {
     background-color: green;
     width: calc(100vw / 8 * 7);
 }
+
+
 
 header {
     height: 80px;
@@ -102,4 +108,21 @@ header {
 footer {
     background-color: grey;
     height: 100px;
+}
+
+@media screen and (max-width: 375px) {
+
+    .logo img {
+        display: none;
+    }
+
+    .logo img.mini {
+        display: block;
+        margin-right: 0;
+    }
+
+    nav a span,
+    nav a p {
+        display: none;
+    }
 }
