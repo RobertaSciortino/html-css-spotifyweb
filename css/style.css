@@ -8,6 +8,11 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+h1 {
+    font-weight: bold;
+    color: rgba(255,255,255,0.9);
+}
+
 a {
     text-decoration: none;
 }
@@ -23,8 +28,6 @@ li {
 
 
 .main-container {
-    background-color: yellow;
-    height: calc(100vh - 100px);
     display: flex;
 }
 
@@ -120,8 +123,20 @@ header {
 }
 
 .for-you, .recently-played {
-    background-color: violet;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.for-you img,
+.recently-played img {
+    width: 147px;
+    border-radius: 50%;
+    padding: 15px;
+}
+.negramaro {
+    display: flex;
+    flex-direction: column;
 }
 
 footer {
