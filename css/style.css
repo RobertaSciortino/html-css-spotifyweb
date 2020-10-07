@@ -4,9 +4,17 @@
     box-sizing: border-box;
 }
 
-footer {
-    background-color: grey;
-    height: 100px;
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+span, i {
+    font-size: 14px;
+    color: #8A8776;
 }
 
 .main-container {
@@ -16,8 +24,25 @@ footer {
 }
 
 aside {
-    background-color: black;
+    background-color: rgba(0,0,0,0.9);
     width: calc(100vw / 8);
+}
+
+.logo img {
+    width: calc(100% - 30px);
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    margin-bottom: 5px;
+}
+
+nav a:hover {
+    border-left: 2px solid #28D25F;
 }
 
 .playlists {
@@ -40,4 +65,9 @@ header {
 .for-you, .recently-played {
     background-color: violet;
     display: flex;
+}
+
+footer {
+    background-color: grey;
+    height: 100px;
 }
