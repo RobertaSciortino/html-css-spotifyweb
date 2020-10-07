@@ -88,7 +88,9 @@ aside a:hover {
     background: -webkit-linear-gradient(top left, rgba(245,213,3,1) 0%, rgba(0,0,0,1) 91%);
     background: -o-linear-gradient(top left, rgba(245,213,3,1) 0%, rgba(0,0,0,1) 91%);
     background: linear-gradient(to bottom right, rgba(245,213,3,1) 0%, rgba(0,0,0,1) 91%);
-    width: calc(100vw / 8 * 7);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 
@@ -97,6 +99,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .menu a {
@@ -114,29 +117,48 @@ header {
     color: #FFF;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 .scroll {
-    width: 60%;
+    width: 80%;
     margin: auto;
     overflow: auto;
     height: calc(100vh - 180px);
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Chrome, Safari and Opera  */
+.scroll::-webkit-scrollbar {
+    display: none;
 }
 
 .for-you, .recently-played {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    margin-bottom: 80px;
 }
 
 .for-you img,
 .recently-played img {
-    width: 147px;
+    width: 200px;
     border-radius: 50%;
-    padding: 15px;
+    padding: 30px;
 }
+
 .negramaro {
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.negramaro a:last-child {
+    color: rgba(255,255,255,0.7);
+    text-align: center;
 }
 
 footer {
