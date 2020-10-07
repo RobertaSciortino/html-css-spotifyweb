@@ -82,16 +82,35 @@ aside a:hover {
 
 
 .playlists {
-    background-color: green;
+    background: -webkit-linear-gradient(top left, rgba(245,213,3,1) 0%, rgba(0,0,0,1) 91%);
+    background: -o-linear-gradient(top left, rgba(245,213,3,1) 0%, rgba(0,0,0,1) 91%);
+    background: linear-gradient(to bottom right, rgba(245,213,3,1) 0%, rgba(0,0,0,1) 91%);
     width: calc(100vw / 8 * 7);
 }
 
 
-
 header {
     height: 80px;
-    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.menu a {
+    padding-right: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.7);
+}
+
+.menu a:last-child {
+    display: none;
+}
+
+.menu a:hover {
+    color: #FFF;
+}
+
 
 .scroll {
     width: 60%;
@@ -110,7 +129,7 @@ footer {
     height: 100px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 375px){
 
     .logo img {
         display: none;
@@ -124,5 +143,40 @@ footer {
     nav a span,
     nav a p {
         display: none;
+    }
+
+    .menu a {
+        display: none;
+    }
+
+    .menu a:last-child {
+        display: block;
+    }
+
+    header {
+        justify-content: flex-start;
+    }
+
+    .menu {
+        padding-left: 20px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .menu a {
+        display: none;
+    }
+
+    .menu a:last-child {
+        display: block;
+    }
+
+    header {
+        justify-content: flex-start;
+    }
+
+    .menu {
+        padding-left: 20px;
     }
 }
