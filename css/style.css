@@ -12,10 +12,15 @@ a {
     text-decoration: none;
 }
 
-span, i {
-    font-size: 14px;
-    color: #8A8776;
+li {
+    list-style-type: none;
 }
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+
 
 .main-container {
     background-color: yellow;
@@ -23,26 +28,53 @@ span, i {
     display: flex;
 }
 
+
+
 aside {
     background-color: rgba(0,0,0,0.9);
-    width: calc(100vw / 8);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+aside a {
+    color: #b3b3b3;
+}
+
+aside a:hover {
+    color: #FFF;
 }
 
 .logo img {
-    width: calc(100% - 30px);
+    width: 120px;
+    margin-right: 80px;
+    margin-bottom: 20px;
 }
 
-nav {
-    display: flex;
-    flex-direction: column;
+.nav-top li,
+.nav-bottom li {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
 }
 
-nav a {
-    margin-bottom: 5px;
+.nav-top ul:first-of-type {
+    margin-bottom: 30px;
 }
 
-nav a:hover {
+.nav-top ul:first-of-type li a {
+    padding-left: 10px;
+}
+
+.nav-top ul:first-of-type li a:hover {
     border-left: 2px solid #28D25F;
+}
+
+
+
+.nav-bottom li:first-child {
+    border-bottom: 1px solid #8A8776;
 }
 
 .playlists {
