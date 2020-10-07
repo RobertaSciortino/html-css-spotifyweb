@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: grey;
+    height: 100px;
+}
+
+.main-container {
+    background-color: yellow;
+    height: calc(100vh - 100px);
+    display: flex;
+}
+
+aside {
+    background-color: black;
+    width: calc(100vw / 8);
+}
+
+.playlists {
+    background-color: green;
+    width: calc(100vw / 8 * 7);
+}
+
+header {
+    height: 80px;
+    background-color: pink;
+}
+
+.scroll {
+    width: 60%;
+    margin: auto;
+    overflow: auto;
+    height: calc(100vh - 180px);
+}
+
+.for-you, .recently-played {
+    background-color: violet;
+    display: flex;
+}
