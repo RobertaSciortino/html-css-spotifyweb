@@ -99,7 +99,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
 }
 
 .menu a {
@@ -124,12 +123,13 @@ main {
 }
 
 .scroll {
-    width: 80%;
+    max-width: 80%;
     margin: auto;
     overflow: auto;
     height: calc(100vh - 180px);
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+    padding-top: 50px;
 }
 
 /* Chrome, Safari and Opera  */
@@ -143,28 +143,41 @@ main {
     margin-bottom: 80px;
 }
 
-.for-you img,
-.recently-played img {
-    width: 200px;
-    border-radius: 50%;
-    padding: 30px;
-}
-
-.negramaro {
+.card {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
 }
 
-.negramaro a:last-child {
-    color: rgba(255,255,255,0.7);
+.card .label {
     text-align: center;
+    color: rgba(255,255,255,0.7);
 }
+
+.album img {
+    width: 150px;
+    border-radius: 50%;
+    margin: 30px;
+}
+
+.card:nth-of-type(3n+3) .album img {
+    border-radius: 0;
+}
+
+.card .label:hover {
+    color: #FFF;
+}
+
+
 
 footer {
     background-color: grey;
     height: 100px;
 }
+
+
+
+
+
 
 @media screen and (max-width: 375px){
 
@@ -197,6 +210,8 @@ footer {
     .menu {
         padding-left: 20px;
     }
+
+
 }
 
 
@@ -216,4 +231,5 @@ footer {
     .menu {
         padding-left: 20px;
     }
+
 }
