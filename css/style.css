@@ -146,6 +146,8 @@ main {
 .card {
     display: flex;
     flex-direction: column;
+    max-width: 150px;
+    margin: 30px;
 }
 
 .card .label {
@@ -154,9 +156,9 @@ main {
 }
 
 .album img {
-    width: 150px;
+    max-width: 150px;
     border-radius: 50%;
-    margin: 30px;
+
 }
 
 .card:nth-of-type(3n+3) .album img {
@@ -228,13 +230,16 @@ footer {
     margin: 0 15px 10px 15px;
 }
 
+.fa-play-circle {
+    font-size: 30px;
+}
+
 .track p,
 .save a i,
 .control-buttons a i,
 .buttons a i {
     color: rgba(255,255,255,0.7);
 }
-
 
 .range {
     display: flex;
@@ -294,7 +299,7 @@ footer {
 }
 
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 480px){
 
     .logo img {
         display: none;
@@ -326,17 +331,33 @@ footer {
         padding-left: 20px;
     }
 
-    .album img {
-        width: 75px;
-        border-radius: 50%;
-        margin: 30px;
+    .card {
+        margin: 10px;
     }
 
     .card .label {
         font-size: 12px;
     }
 
+    .track {
+        display: none;
+    }
 
+    .range span {
+        display: none;
+    }
+
+    .center {
+        max-width: 50%;
+    }
+
+    .control-buttons a {
+        margin: 0 5px 10px;
+    }
+
+    .right {
+        display: none;
+    }
 }
 
 
@@ -349,6 +370,10 @@ footer {
         display: block;
     }
 
+    .logo img {
+        margin-right: 0;
+    }
+
     header {
         justify-content: flex-start;
     }
@@ -357,4 +382,19 @@ footer {
         padding-left: 20px;
     }
 
+    .track {
+        display: none;
+    }
+
+    .card {
+        margin: 30px;
+    }
+
+    .buttons a i {
+        font-size: 14px;
+    }
+
+    .card .label {
+        font-size: 14px;
+    }
 }
