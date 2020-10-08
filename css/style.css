@@ -43,7 +43,7 @@ aside {
 }
 
 aside a {
-    color: #b3b3b3;
+    color: rgba(255,255,255,0.8);
 }
 
 aside a:hover {
@@ -170,13 +170,128 @@ main {
 
 
 footer {
-    background-color: grey;
+    background-color: #282828;
     height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    display: flex;
+}
+
+.cover {
+    display: flex;
+    align-self: center;
+}
+
+.cover img {
+    padding: 15px;
+}
+
+.track {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.track-title {
+    font-size: 14px;
+}
+
+.track-artist {
+    font-size: 12px;
+}
+
+.save {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
 }
 
 
+.center {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.control-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.control-buttons a {
+    margin: 0 15px 10px 15px;
+}
+
+.track p,
+.save a i,
+.control-buttons a i,
+.buttons a i {
+    color: rgba(255,255,255,0.7);
+}
 
 
+.range {
+    display: flex;
+    align-items: center;
+}
+
+.range span {
+    color: rgba(255,255,255,0.8);
+    font-size: 12px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(255,255,255,0.7);
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin: 0 5px;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background-color: rgba(255,255,255,0.9);
+    cursor: pointer;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+.buttons a,
+.buttons input {
+    margin: 0 10px;
+}
 
 
 @media screen and (max-width: 375px){
@@ -209,6 +324,16 @@ footer {
 
     .menu {
         padding-left: 20px;
+    }
+
+    .album img {
+        width: 75px;
+        border-radius: 50%;
+        margin: 30px;
+    }
+
+    .card .label {
+        font-size: 12px;
     }
 
 
