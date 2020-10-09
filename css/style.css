@@ -8,10 +8,6 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-h1 {
-    font-weight: bold;
-    color: rgba(255,255,255,0.9);
-}
 
 a {
     text-decoration: none;
@@ -123,8 +119,6 @@ main {
 }
 
 .scroll {
-    max-width: 80%;
-    margin: auto;
     overflow: auto;
     height: calc(100vh - 180px);
     -ms-overflow-style: none;  /* IE and Edge */
@@ -132,9 +126,15 @@ main {
     padding-top: 50px;
 }
 
+
 /* Chrome, Safari and Opera  */
 .scroll::-webkit-scrollbar {
     display: none;
+}
+
+h2 {
+  margin-left: 20px;
+  color: rgba(255,255,255,0.7);
 }
 
 .for-you, .recently-played {
@@ -168,8 +168,6 @@ main {
 .card .label:hover {
     color: #FFF;
 }
-
-
 
 footer {
     background-color: #282828;
